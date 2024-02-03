@@ -1,3 +1,10 @@
+interface ItemsObject {
+  itemName?: string;
+  bookTitle?: string;
+  author?: string;
+  itemPrice: number;
+}
+
 interface deliveryObject {
   orderDate: string;
   deliveryDate: string;
@@ -5,14 +12,7 @@ interface deliveryObject {
   itemTotal: number;
   orderNumber: string;
   shipTo: string;
-  products: itemsObject[];
-}
-
-interface ItemsObject {
-  itemName?: string;
-  bookTitle?: string;
-  author?: string;
-  itemPrice: number;
+  products: ItemsObject[];
 }
 
 const orderHistory: deliveryObject[] = [
