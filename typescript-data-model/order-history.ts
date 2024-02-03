@@ -1,85 +1,89 @@
-// Objects can obtain arrays, Objects with the arrays should contain the items in the order
-// Property and Values should follow the same shape
-// Created the items object to contain all items delivered in the order.
-// created the dated object to provide delivery details and include the array [] of items object
-// author? is optional as not all orders included a book
-
-interface itemsObject {
-  itemName: string;
-  author?: string;
-  returnDate: string;
-  itemPrice: number;
-}
-
-interface datedObject {
+interface deliveryObject {
+  orderDate: string;
   deliveryDate: string;
+  returnDate: string;
   itemTotal: number;
   orderNumber: string;
+  shipTo: string;
   products: itemsObject[];
 }
 
-const orderHistory: datedObject[] = [
+interface ItemsObject {
+  itemName?: string;
+  bookTitle?: string;
+  author?: string;
+  itemPrice: number;
+}
+
+const orderHistory: deliveryObject[] = [
+  // first order
   {
+    orderDate: 'Aug 4, 2020',
     deliveryDate: 'Aug 8, 2020',
+    returnDate: 'Sep 7, 2020',
     itemTotal: 34.0,
-    orderNumber: '114-3941689-8772232',
+    orderNumber: `114-3941689-8772232`,
+    shipTo: `JS Masher`,
     products: [
       {
-        itemName: 'JavaScript for impatient programmers',
+        bookTitle: `JavaScript for impatient programmers`,
         author: `Rauschmayer, Dr. Axel`,
-        returnDate: `Sep 7, 2020`,
         itemPrice: 31.55,
       },
     ],
   },
+  // second order
 
   {
-    deliveryDate: 'Jul 20, 2020',
+    orderDate: 'Jul 19,2020',
+    deliveryDate: 'Jul 20,2020',
+    returnDate: 'Aug 19,2020',
     itemTotal: 44.53,
-    orderNumber: '113-9984268-1280257',
+    orderNumber: `113-9984268-1280257`,
+    shipTo: `JS Masher`,
     products: [
       {
-        itemName: 'The Timeless Way of Building',
+        bookTitle: `The Timeless Way of Building`,
         author: `Alexander, Christopher`,
-        returnDate: `Aug 19, 2020`,
         itemPrice: 41.33,
       },
     ],
   },
-
+  // third order
   {
-    deliveryDate: 'Jul 7, 2020',
+    orderDate: 'Jul 4,2020',
+    deliveryDate: 'Jul 7,2020',
+    returnDate: 'Aug 5,2020',
     itemTotal: 17.22,
-    orderNumber: '114-2875557-9059409',
+    orderNumber: `114-2875557-9059409`,
+    shipTo: `JS Masher`,
     products: [
       {
-        itemName:
-          'Gamecube Controller Adapter. Super Smash Bros Switch Gamecube Adapter for WII U, PC. Support Turbo and Vibration Features. No Driver and No lag-Gamecube Adapter.',
-        returnDate: `Aug 5, 2020`,
+        itemName: `GameCube Controller Adapter. SUper Smash Bros Switch Gamecube Adapter for WII U, PC Support Turbo and Vibration Features. No Driver and No Lag-Gamecube Adapter`,
         itemPrice: 15.98,
       },
     ],
   },
-
+  // fourth order
   {
-    deliveryDate: 'Jul 5, 2020',
+    orderDate: 'Jul 3,2020',
+    deliveryDate: 'Jul 5,2020',
+    returnDate: 'Aug 4,2020',
     itemTotal: 138.93,
-    orderNumber: '113-2883177-2648248',
+    orderNumber: `113-2883177-2648248`,
+    shipTo: `JS Masher`,
     products: [
       {
-        itemName:
-          'GameCube Controller - Super Smash Bros. Edition (Nintendo Switch)',
-        returnDate: `Aug 4, 2020`,
+        itemName: `GameCube Controller - Super Smash Bors. Edition (Nintendo Switch)`,
         itemPrice: 94.95,
       },
-
       {
-        itemName: `The Art of Sql`,
+        bookTitle: `The Art of Sql`,
         author: `Faroult, Stephanie`,
-        returnDate: `Aug 4, 2020`,
         itemPrice: 33.99,
       },
     ],
   },
 ];
-console.log(orderHistory);
+
+console.log('Order History:', orderHistory);
