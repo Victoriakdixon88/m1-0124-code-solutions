@@ -5,12 +5,13 @@
 Answer the following questions in the provided markdown file before turning in this exercise:
 
 - How do block-level elements affect the document flow?
-
+  A block level element always starts on a new line
 - How do inline elements affect the document flow?
-
+  they exist within the same line as their nested element
 - What are the default width and height of a block-level element?
-
+  Height of the content with a marin, width of the content
 - What are the default width and height of an inline element?
+  height of the content, width of the content
 
 ## Notes
 
