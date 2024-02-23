@@ -5,12 +5,13 @@
 Answer the following questions in the provided markdown file before turning in this exercise:
 
 - What are the names of the individual pieces of a CSS rule?
-
+  selector and declarations(property/value pair)
 - In CSS, how do you select elements by their `class` attribute?
-
+  .class
 - In CSS, how do you select elements by their tag name?
-
+  tag
 - In CSS, how do you select an element by its `id` attribute?
+  #id
 
 ## Notes
 
