@@ -1,0 +1,75 @@
+/* set size for my form */
+
+h1{
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color:rgb(231, 69, 69);
+  font-family: AtlasGrotesk, sans-serif;
+  letter-spacing: .5px;
+  font-size: 19px;
+  font-weight:400
+}
+
+/* center form */
+div {
+  display: flex;
+  justify-content: center;
+}
+
+input, select{
+  display:block;
+  width: 650px;
+  height:40px;
+  font-family:AtlasGrotesk, sans-serif;
+  font-size: 1.3 rem;
+  border-radius: 5px;
+  border:1px solid;
+  border-color: lightgray;
+}
+
+select {
+  background-color: rgb(243 243 243);
+  font-family: 'Brandon Grotesque', sans-serif;
+  padding-left: 2px;
+}
+
+::placeholder {
+  color: rgb(153 153 153);
+  font-family: AtlasGrotesk, sans-serif;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+  color:rgb(231, 69, 69);
+  font-family: AtlasGrotesk, sans-serif;
+  font-size: 1.3 rem;
+  font-weight: 100;
+}
+
+label{
+  font-family: "Brandon Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+button {
+  background-color: #ec5c57;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  margin-left: 550px;
+  height: 30px;
+  width: 90px;
+}
+
+div.button {
+  margin: auto;
+  margin-top: 10px;
+  width: 50%;
+  text-align: right;
+
+}
